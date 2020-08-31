@@ -1,0 +1,16 @@
+@import "../../node_modules/normalize.css/normalize.css";
+@import "/utils/vars.scss";
+@import "/utils/fonts.scss";
+@import "/components/global.scss";
+@import "/components/top-bar.scss";
+@import "/components/bot-bar.scss";
+@import "/components/content.scss";
+@import "/components/media.scss";
+
+body {
+  font-family: $plumbn;
+}
+
+* {
+  box-sizing: border-box;
+}

@@ -1,0 +1,68 @@
+.header__bot_bar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 31px;
+
+    &-link {
+        font-size: 16px;
+        font-family: $plumbb;
+        color: $bl;
+        text-transform: uppercase;
+        height: 50%;
+    }
+
+    &-logo {
+        flex-basis: 23.5%;
+        padding-left: 64px;
+        cursor: pointer;
+    }
+
+    &-nav {
+        padding-top: 7px;
+        flex-basis: 52.5%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-social {
+        padding: 10px 27px 0 124px;
+        flex-basis: 24%;
+        display: flex;
+        justify-content: space-between;
+
+        &-wrap {
+            display: flex;
+            justify-content: space-between;
+            margin-top: -5px;
+            width: 134px;
+
+            & > * {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 28px;
+                height: 28px;
+                background: #000;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &-fb {
+        background: #3b5998;
+    }
+
+    &-instagram {
+        background: url("../../public/img/instagram-bg.jpg");
+    }
+
+    &-youtube {
+        background: #e62117;
+    }
+
+    &-search {
+        cursor: pointer;
+        margin-right: 25px;
+    }
+}

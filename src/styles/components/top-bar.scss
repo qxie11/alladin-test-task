@@ -1,0 +1,79 @@
+.header__top_bar {
+    background: #dc151d;
+    display: flex;
+    justify-content: center;
+    padding: 13px 0 12px 0;
+    font-size: 14.5px;
+    color: $wh;
+
+    &-wrap {
+        max-width: 1440px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 520px));
+        justify-content: space-between;
+    }
+
+    &-info {
+        max-width: 500px;
+        width: 100%;
+        margin-left: 80px;
+        display: flex;
+        justify-content: space-between;
+
+        & > * {
+            position: relative;
+
+            &:before {
+                content: "";
+                position: absolute;
+                width: 14px;
+                height: 14px;
+                background-repeat: no-repeat;
+                left: -20px;
+            }
+        }
+    }
+
+    &-location {
+        margin-left: 9px;
+
+        &:before {
+            background-image: url("../../public/img/location.png");
+        }
+    }
+
+    &-subway {
+        margin-right: 12px;
+        &:before {
+            background-image: url("../../public/img/subway.png");
+            background-position: center center;
+        }
+    }
+
+    &-time {
+        &:before {
+            background-image: url("../../public/img/clock.png");
+        }
+    }
+
+    &-nav {
+        width: 100%;
+        max-width: 421px;
+        padding-right: 30px;
+        justify-self: end;
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            text-decoration: none;
+            color: $wh;
+
+            &:hover {
+                font-weight: bold;
+            }
+        }
+    }
+}
